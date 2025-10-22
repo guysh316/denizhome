@@ -1,0 +1,549 @@
+    /* -------------------------- components -------------------------- */
+* {
+    box-sizing: border-box;
+    font-family: yb-rg;
+
+}
+
+body {
+    background-color: #FFFEFB;
+    position: relative;
+    overflow-x: hidden;
+    margin: 0;
+    direction: rtl;
+}
+
+h1,
+
+h2,
+
+h3,
+
+h4,
+
+h5,
+
+h6,
+
+p {
+
+    margin: 0;
+
+}
+
+a {
+
+    text-decoration: none;
+
+    display: inline-block;
+    
+    color: black;
+
+}
+
+a:hover{
+  color: var(--red);
+}
+
+span {
+    display: inline-block;
+}
+
+.icon{
+  width: 60px;
+}
+
+:root {
+  --red:#ad2a2a;
+  --navy: #052439;
+  --white: #ffffff;
+  --bg-light: #f7f8fb;
+  --text: #333;
+}
+
+
+/* fonts */
+@font-face {
+    font-family: 'yb-fat';
+    src: url("../fonts/Yekan\ Bakh\ -\ Fat.ttf");
+}
+
+@font-face {
+    font-family: 'yb-heavy';
+    src: url("../fonts/Yekan\ Bakh\ -\ Heavy.ttf");
+}
+
+@font-face {
+    font-family: 'yb-bd';
+    src: url("../fonts/Yekan\ Bakh\ -Bold.ttf");
+}
+
+@font-face {
+    font-family: 'yb-md';
+    src: url("../fonts/Yekan\ Bakh\ -\ Medium.ttf");
+}
+
+@font-face {
+    font-family: 'yb-rg';
+    src: url("../fonts/Yekan\ Bakh.ttf");
+}
+
+@font-face {
+    font-family: 'yb-lt';
+    src: url("../fonts/Yekan\ Bakh\ -Light.ttf");
+}
+
+@font-face {
+    font-family: 'yb-hr';
+    src: url("../fonts/Yekan\ Bakh\ -\ Hairline.ttf");
+}
+
+/* ---------------- Topbar ---------------- */
+    
+    .topbar {
+      background-color: #292C2D;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 10px 0;
+      letter-spacing: 0.3px;
+    }
+
+
+    .main-header {
+      padding: 15px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+
+/* ---------------- HEADER ---------------- */
+
+
+    .main-header {
+      padding: 15px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 800;
+      display: inline-block;
+      margin-left: 20px;
+    }
+    .logo .deniz {
+      color: #DC2655;
+    }
+    .logo .home {
+      color: #000;
+    }
+
+
+    .search-box {
+      position: relative;
+      display: inline-block;
+      width: 500px;
+      vertical-align: middle;
+    }
+    .search-box input {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      padding: 8px 40px 8px 16px;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+    }
+    .search-box input:focus {
+      border-color: #DC2655;
+      box-shadow: 0 0 4px rgba(220, 38, 85, 0.3);
+      outline: none;
+    }
+    .search-box img {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #777;
+      font-size: 1.1rem;
+    }
+
+    .icons-area {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 15px;
+    }
+
+
+    .user-icon {
+      border-radius: 50px;
+      padding: 6px 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .user-icon img {
+      width: 20px;
+      cursor: pointer;
+      transition: color 0.2s ease;
+    }
+
+    .user-icon img:hover,
+    .cart-icon:hover {
+      color: #DC2655;
+    }
+
+
+    .cart-icon {
+      font-size: 1.3rem;
+      cursor: pointer;
+      transition: color 0.2s ease;
+    }
+
+    .divider {
+      width: 1px;
+      height: 20px;
+      background-color: #ddd;
+    }
+
+
+/* ---------------- MENU ---------------- */
+    
+    .menu-bar {
+      background-color: #fff;
+      border-bottom: 1px solid #eee;
+      padding: 10px 0;
+    }
+
+    .menu-bar .menu-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .menu-bar .menu-container .menu-logo {
+      font-size: 1.6rem;
+      font-weight: 800;
+      margin-left: 25px;
+    }
+    .menu-bar .menu-container .menu-logo .deniz {
+      color: #DC2655;
+    }
+    .menu-bar .menu-container .menu-logo .home {
+      color: #000;
+    }
+
+    .menu-item {
+      font-weight: 600;
+      font-size: 1rem;
+      color: #333;
+      cursor: pointer;
+      transition: color 0.2s ease;
+    }
+
+    .menu-item:hover {
+      color: #DC2655;
+    }
+
+    .menu-divider {
+      width: 1px;
+      height: 18px;
+      background-color: #ccc;
+    }
+
+    .menu-item img{
+      width: 20px;
+      position: relative;
+      top: -2px;
+      margin-left: 4px;
+    }
+
+
+
+/* ---------------- HERO SECTION ---------------- */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 77.7vh;
+  overflow: hidden;
+}
+
+.hero-section .hero-swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-section .hero-swiper .swiper-slide {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 1.2s ease, opacity 1.2s ease;
+}
+
+.hero-section .hero-content {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  z-index: 10;
+  top: 80px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+}
+
+.hero-section .swiper-slide-active .hero-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-section .hero-title-top {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.hero-section .hero-title-main {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.hero-section .swiper-pagination {
+  bottom: 25px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-section .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #52595A;
+  opacity: 1;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.hero-section .swiper-pagination-bullet-active::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid #52595A;
+  border-radius: 50%;
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+
+
+
+/* ---------------- AMAZING SECTION ---------------- */
+.unique-amazing-section {
+  direction: rtl;
+  position: relative;
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.unique-amazing-section .amazing-box {
+  background: linear-gradient(145deg, #e32456, #c91f4c);
+  border-radius: 20px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 25px rgba(220, 38, 85, 0.3);
+  height: 60vh !important;
+}
+
+.unique-amazing-section .sparkle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 35px;
+}
+
+.unique-amazing-section .amazing-content h2 {
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.unique-amazing-section .amazing-content .view-all {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-weight: 600;
+  gap: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  backdrop-filter: blur(4px);
+}
+
+.unique-amazing-section .amazing-content .view-all:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.unique-amazing-section .timer-box {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 14px;
+  padding: 14px 18px;
+  margin-top: 110px;
+  color: #fff;
+  backdrop-filter: blur(6px);
+}
+
+.unique-amazing-section .timer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.unique-amazing-section .time {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  text-align: center;
+  min-width: 48px;
+}
+
+.unique-amazing-section .swiper-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.unique-amazing-section .swiper-nav:hover {
+  transform: scale(1.1) translateY(-50%);
+}
+
+.unique-amazing-section .swiper-nav.next {
+  left: 2px;
+}
+
+.unique-amazing-section .swiper-nav.prev {
+  right: -19px;
+  display: none;
+}
+
+/* ---------------- PRODUCT CARD ---------------- */
+
+.unique-amazing-section .product-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 15px;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+}
+
+.unique-amazing-section .product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.unique-amazing-section .product-info {
+  text-align: right;
+  margin-top: auto;
+  flex-grow: 1;
+}
+
+.unique-amazing-section .product-info .rating {
+  color: #ffb300;
+  font-size: 0.9rem;
+}
+
+.unique-amazing-section .product-info .title {
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 6px 0 4px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.unique-amazing-section .product-info .brand {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.unique-amazing-section .colors {
+  display: flex;
+  gap: 5px;
+  margin-top: 6px;
+}
+
+.unique-amazing-section .color {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+
+.unique-amazing-section .product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 12px;
+}
+
+.unique-amazing-section .discount {
+  background-color: rgba(220, 38, 85, 0.1);
+  color: #dc2655;
+  border-radius: 10px;
+  padding: 4px 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.unique-amazing-section .old {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+.unique-amazing-section .new {
+  font-weight: bold;
+  color: #222;
+  font-size: 1rem;
+}
+
+.unique-amazing-section .swiper-slide .row > [class*="col-"] {
+  display: flex;
+}
