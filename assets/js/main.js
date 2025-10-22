@@ -17,26 +17,24 @@ const heroSwiper = new Swiper(".hero-swiper", {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-
-  // === Swiper Config ===
   const amazingSwiperUnique = new Swiper(".amazingSwiperUnique", {
     slidesPerView: 3,
     spaceBetween: 20,
     slidesPerGroup: 1,
-    loop: true,
+    loop: false,
     navigation: {
       nextEl: ".swiper-nav.next",
       prevEl: ".swiper-nav.prev",
     },
     autoplay: {
-      delay: 5000,
+      delay: 7000,
       disableOnInteraction: false,
     },
     breakpoints: {
       0: { slidesPerView: 1 },
       768: { slidesPerView: 2 },
-      992: { slidesPerView: 3 }
-    }
+      992: { slidesPerView: 3 },
+    },
   });
 
   // === Countdown Timer ===
@@ -67,5 +65,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const timerInterval = setInterval(updateTimer, 1000);
   updateTimer();
-
 });
