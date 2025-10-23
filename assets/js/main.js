@@ -120,3 +120,31 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 })();
 });
+
+(function () {
+  const favButtons = document.querySelectorAll(".fav-filter-btn");
+  const favCards = Array.from(document.querySelectorAll(".fav-card"));
+
+  function showFavCards(category) {
+    let filtered = category
+      ? favCards.filter((card) => card.getAttribute("data-cat") === category)
+      : favCards;
+
+    favCards.forEach((card) => (card.parentElement.style.display = "none"));
+    filtered.slice(0, 4).forEach((card) => {
+      card.parentElement.style.display = "";
+      card.classList.add("fade-in");
+    });
+  }
+
+  showFavCards();
+
+  favButtons.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      favButtons.forEach((b) => b.classList.remove("active"));
+      this.classList.add("active");
+      showFavCards(this.getAttribute("data-filter"));
+    });
+  });
+})();
+

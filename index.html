@@ -40,7 +40,7 @@
 
         <div class="d-flex align-items-center flex-wrap">
           <div class="logo">
-            <span class="deniz">دنیز</span><span class="home">هوم</span>
+            <img src="assets/images/logo/logo.png" class="deniz">
           </div>
           <div class="search-box">
             <img src="assets/icons/Search.svg">
@@ -342,6 +342,7 @@
 
 
 <!-- ======= Best Seller Section ======= -->
+
 <section class="container py-4 bm-products-section" aria-label="پرفروش‌ترین محصولات">
   <!-- Title row -->
   <div class="d-flex align-items-center bm-title-row">
@@ -553,7 +554,323 @@
 </section>
 
 
+<!-- ======= credit card Section ======= -->
 
+
+<div class="container credit-section">
+  <div class="row g-4">
+    <!-- کارت اول -->
+    <div class="col-lg-6">
+      <div class="credit-card" style="background-image: url('assets/images/homepage/banner2.png');">
+        <div class="credit-text text-start">
+          <div class="credit-title">
+            <span class="credit-badge">٪</span>
+            خرید اعتباری!
+          </div>
+          <p class="credit-desc">
+            سرویس‌های خاص قابلمه متنوع زی‌هوم، حال خوب آشپزخانه
+          </p>
+          <a href="#" class="credit-btn">
+            مشاهده همه
+            <img src="assets/icons/arrow left.svg" alt="→">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- کارت دوم -->
+    <div class="col-lg-6">
+      <div class="credit-card text-end" style="background-image: url('assets/images/homepage/banner3.png');">
+        <div class="credit-text ms-auto">
+          <div class="credit-title">
+            <span class="credit-badge">٪</span>
+            خرید اعتباری!
+          </div>
+          <p class="credit-desc">
+            قهوه‌سازهای اسمگ، آشپزخانه مدرن با زی‌هوم
+          </p>
+          <a href="#" class="credit-btn">
+            مشاهده همه
+            <img src="assets/icons/arrow left.svg" alt="→">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- ======= Favorite Section ======= -->
+<section class="container py-4 fav-products-section" aria-label="علاقه‌مندی‌ها">
+  <!-- Title row -->
+  <div class="d-flex align-items-center fav-title-row">
+    <h3 class="fav-title mb-0">محبوب‌ترین‌ها</h3>
+
+    <div class="flex-grow-1 mx-3 fav-middle-line" aria-hidden="true"></div>
+
+    <div class="d-flex align-items-center fav-view-all" id="fav-view-all-btn" style="cursor:pointer;">
+      <a href="#" class="me-2">مشاهده همه</a>
+      <img src="assets/icons/arrow-special.svg" alt="مشاهده همه">
+    </div>
+  </div>
+
+  <!-- Filters -->
+  <div class="mt-3 mb-2">
+    <div class="fav-sep-row d-flex align-items-center">
+      <div class="fav-filter-pill me-3" aria-hidden="true"></div>
+
+      <nav class="fav-filters-nav" aria-label="فیلتر علاقه‌مندی‌ها">
+        <ul class="list-unstyled d-flex gap-3 mb-0 flex-wrap">
+          <li><button class="btn fav-filter-btn active" data-filter="decor">دکوراسیون</button></li>
+          <li><button class="btn fav-filter-btn" data-filter="kitchen">آشپزخانه</button></li>
+          <li><button class="btn fav-filter-btn" data-filter="electro">لوازم برقی</button></li>
+          <li><button class="btn fav-filter-btn" data-filter="tools">لوازم و تجهیزات</button></li>
+          <li><button class="btn fav-filter-btn" data-filter="accessory">اکسسوری منزل</button></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Product cards -->
+  <div class="row gy-4 mt-2 fav-cards-row">
+    <!-- CARD 1 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <article class="card fav-card h-100" data-cat="kitchen">
+        <div class="card-body d-flex flex-column">
+          <div class="fav-img-wrap mb-3">
+            <img src="assets/images/homepage/pic.png" class="img-fluid fav-product-img" alt="سرخ کن بدون روغن">
+          </div>
+          <div class="flex-row">
+            <h5 class="fav-product-title mb-1">سرخ کن بدون روغن</h5>
+            <div class="fav-meta mb-2 d-flex align-items-center gap-2">
+              <i class="bi bi-star"></i>
+              <span class="fav-rating">۴.۳</span>
+            </div>
+          </div>
+          <div class="fav-brand mb-2 text-muted">N-LITE 203 alRINKS</div>
+          <div class="fav-colors d-flex align-items-center gap-1 mb-3">
+            <span class="fav-color" style="background:#4a4a4a"></span>
+            <span class="fav-color" style="background:#9b8f7a"></span>
+          </div>
+          <div class="mt-auto d-flex justify-content-between align-items-end fav-price-row">
+            <div class="fav-discount-badge">۳۰٪</div>
+            <div>
+              <div class="fav-old-price">۲,۴۰۰,۰۰۰ تومان</div>
+              <div class="fav-new-price">۱,۶۴۰,۰۰۰ تومان</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <article class="card fav-card h-100" data-cat="tools">
+        <div class="card-body d-flex flex-column">
+          <div class="fav-img-wrap mb-3">
+            <img src="assets/images/homepage/pic.png" class="img-fluid fav-product-img" alt="جعبه ابزار کامل">
+          </div>
+          <div class="flex-row">
+            <h5 class="fav-product-title mb-1">جعبه ابزار کامل</h5>
+            <div class="fav-meta mb-2 d-flex align-items-center gap-2">
+              <i class="bi bi-star"></i>
+              <span class="fav-rating">۴.۴</span>
+            </div>
+          </div>
+          <div class="fav-brand mb-2 text-muted">Bosch Pro Set</div>
+          <div class="fav-colors d-flex align-items-center gap-1 mb-3">
+            <span class="fav-color" style="background:#0b5394"></span>
+            <span class="fav-color" style="background:#ffd966"></span>
+          </div>
+          <div class="mt-auto d-flex justify-content-between align-items-end fav-price-row">
+            <div class="fav-discount-badge">۱۰٪</div>
+            <div>
+              <div class="fav-old-price">۱,۸۰۰,۰۰۰ تومان</div>
+              <div class="fav-new-price">۱,۶۲۰,۰۰۰ تومان</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <article class="card fav-card h-100" data-cat="electro">
+        <div class="card-body d-flex flex-column">
+          <div class="fav-img-wrap mb-3">
+            <img src="assets/images/homepage/pic.png" class="img-fluid fav-product-img" alt="جاروبرقی خانگی">
+          </div>
+          <div class="flex-row">
+            <h5 class="fav-product-title mb-1">جاروبرقی خانگی</h5>
+            <div class="fav-meta mb-2 d-flex align-items-center gap-2">
+              <i class="bi bi-star"></i>
+              <span class="fav-rating">۴.۶</span>
+            </div>
+          </div>
+          <div class="fav-brand mb-2 text-muted">Samsung Power 2000W</div>
+          <div class="fav-colors d-flex align-items-center gap-1 mb-3">
+            <span class="fav-color" style="background:#1b1b1b"></span>
+            <span class="fav-color" style="background:#4f4f4f"></span>
+          </div>
+          <div class="mt-auto d-flex justify-content-between align-items-end fav-price-row">
+            <div class="fav-discount-badge">۱۵٪</div>
+            <div>
+              <div class="fav-old-price">۳,۸۰۰,۰۰۰ تومان</div>
+              <div class="fav-new-price">۳,۲۳۰,۰۰۰ تومان</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <article class="card fav-card h-100" data-cat="accessory">
+        <div class="card-body d-flex flex-column">
+          <div class="fav-img-wrap mb-3">
+            <img src="assets/images/homepage/pic.png" class="img-fluid fav-product-img" alt="آینه دکوراتیو">
+          </div>
+          <div class="flex-row">
+            <h5 class="fav-product-title mb-1">آینه دکوراتیو</h5>
+            <div class="fav-meta mb-2 d-flex align-items-center gap-2">
+              <i class="bi bi-star"></i>
+              <span class="fav-rating">۴.۸</span>
+            </div>
+          </div>
+          <div class="fav-brand mb-2 text-muted">DecoHome Style</div>
+          <div class="fav-colors d-flex align-items-center gap-1 mb-3">
+            <span class="fav-color" style="background:#f2f2f2"></span>
+            <span class="fav-color" style="background:#b6a27c"></span>
+          </div>
+          <div class="mt-auto d-flex justify-content-between align-items-end fav-price-row">
+            <div class="fav-discount-badge">۲۵٪</div>
+            <div>
+              <div class="fav-old-price">۹۰۰,۰۰۰ تومان</div>
+              <div class="fav-new-price">۶۷۵,۰۰۰ تومان</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ===== Simple Banner Section ===== -->
+<section class="simple-banner container my-5">
+  <div class="banner-box position-relative overflow-hidden rounded-4">
+    <img src="assets/images/homepage/banner4.png" alt="لوازم خانگی" class="img-fluid w-100 banner-bg">
+
+    <div class="banner-content position-absolute text-end">
+      <h2 class="banner-title">کامل‌ترین مجموعه لوازم خانگی</h2>
+      <p class="banner-desc">خانه‌ات را با جدیدترین محصولات تجهیز کن</p>
+      <a href="#" class="btn banner-btn"> مشاهده همه <img src="assets/icons/arrow left.svg"></a>
+    </div>
+
+    <div class="banner-circle position-absolute text-center text-white">
+      <span>فروش ویژه</span>
+      <strong>فقط تا جمعه</strong>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="container py-5 bm-blog-section" aria-label="خواندنی ها">
+  <!-- Title row -->
+  <div class="d-flex align-items-center bm-title-row mb-4">
+    <h3 class="bm-title mb-0">خواندنی‌ها</h3>
+    <div class="flex-grow-1 mx-3 bm-middle-line" aria-hidden="true"></div>
+    <div class="d-flex align-items-center bm-view-all" id="bm-view-all-btn" style="cursor:pointer;">
+      <a href="#" class="me-2 text-decoration-none text-dark">مشاهده همه</a>
+      <img src="assets/icons/arrow-special.svg" alt="مشاهده همه" width="18">
+    </div>
+  </div>
+
+  <!-- Blog cards -->
+  <div class="row g-4">
+    <!-- Blog card -->
+    <div class="col-md-6 col-lg-3">
+      <div class="bm-blog-card h-100">
+        <img src="assets/images/homepage/blog.png" class="bm-blog-img" alt="مقاله 1">
+        <div class="bm-blog-body">
+          <h5 class="bm-blog-title">مقایسه برندهای خاص ماشین ظرفشویی</h5>
+          <p class="bm-blog-text">
+            ماشین ظرفشویی یکی از وسایل کاربردی در آشپزخانه است که انتخاب برند مناسب آن اهمیت زیادی دارد.
+          </p>
+          <div class="bm-blog-footer">
+            <span class="bm-blog-date">۹ آذر ۱۴۰۳</span>
+            <span class="bm-blog-arrow">
+              <img src="assets/icons/Arrow-blog.svg" alt="→" width="18">
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog card -->
+    <div class="col-md-6 col-lg-3">
+      <div class="bm-blog-card h-100">
+        <img src="assets/images/homepage/blog.png" class="bm-blog-img" alt="مقاله 1">
+        <div class="bm-blog-body">
+          <h5 class="bm-blog-title">مقایسه برندهای خاص ماشین ظرفشویی</h5>
+          <p class="bm-blog-text">
+            ماشین ظرفشویی یکی از وسایل کاربردی در آشپزخانه است که انتخاب برند مناسب آن اهمیت زیادی دارد.
+          </p>
+          <div class="bm-blog-footer">
+            <span class="bm-blog-date">۹ آذر ۱۴۰۳</span>
+            <span class="bm-blog-arrow">
+              <img src="assets/icons/Arrow-blog.svg" alt="→" width="18">
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog card -->
+    <div class="col-md-6 col-lg-3">
+      <div class="bm-blog-card h-100">
+        <img src="assets/images/homepage/blog.png" class="bm-blog-img" alt="مقاله 1">
+        <div class="bm-blog-body">
+          <h5 class="bm-blog-title">مقایسه برندهای خاص ماشین ظرفشویی</h5>
+          <p class="bm-blog-text">
+            ماشین ظرفشویی یکی از وسایل کاربردی در آشپزخانه است که انتخاب برند مناسب آن اهمیت زیادی دارد.
+          </p>
+          <div class="bm-blog-footer">
+            <span class="bm-blog-date">۹ آذر ۱۴۰۳</span>
+            <span class="bm-blog-arrow">
+              <img src="assets/icons/Arrow-blog.svg" alt="→" width="18">
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog card -->
+    <div class="col-md-6 col-lg-3">
+      <div class="bm-blog-card h-100">
+        <img src="assets/images/homepage/blog.png" class="bm-blog-img" alt="مقاله 1">
+        <div class="bm-blog-body">
+          <h5 class="bm-blog-title">مقایسه برندهای خاص ماشین ظرفشویی</h5>
+          <p class="bm-blog-text">
+            ماشین ظرفشویی یکی از وسایل کاربردی در آشپزخانه است که انتخاب برند مناسب آن اهمیت زیادی دارد.
+          </p>
+          <div class="bm-blog-footer">
+            <span class="bm-blog-date">۹ آذر ۱۴۰۳</span>
+            <span class="bm-blog-arrow">
+              <img src="assets/icons/Arrow-blog.svg" alt="→" width="18">
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
