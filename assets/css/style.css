@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #FFFEFB;
+    background-color: #f8f9fa;
     position: relative;
     overflow-x: hidden;
     margin: 0;
@@ -349,7 +349,6 @@ span {
 /* ================= AMAZING OFFERS SECTION ================= */
 .unique-amazing-section {
   direction: rtl;
-  background-color: #f8f9fa;
   padding: 60px 0;
   position: relative;
   overflow: visible;
@@ -552,10 +551,10 @@ span {
 }
 
 .unique-amazing-section .color {
-  width: 14px;
+  width: 15px;
   height: 14px;
-  border-radius: 50%;
-  border: 1px solid #ccc;
+  border: 1px solid transparent;
+  border-radius: 15%;
 }
 
 .unique-amazing-section .product-price {
@@ -585,4 +584,373 @@ span {
   font-weight: bold;
   color: #222;
   font-size: 1rem;
+}
+
+
+/* ---------------- CATEGORY SECTION ---------------- */
+
+
+    .category-section {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .category-section h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 45px;
+      position: relative;
+    }
+
+    .category-section .swiper {
+      width: 90%;
+      max-width: 1300px;
+    }
+
+    .category-section .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
+
+    .category-section .category-card {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+      transition: all 0.3s ease;
+      transform: translateY(-6px);
+      padding: 25px 10px;
+      width: 100%;
+      max-width: 260px;
+      cursor: pointer;
+      border: 1px solid #C2C5C6;
+    }
+
+    .category-section .category-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .category-section .category-card img {
+      width: 110px;
+      height: 110px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+
+    .category-section .category-card h5 {
+      font-size: 1rem;
+      color: #333;
+      margin: 0;
+      font-weight: 500;
+    }
+
+      .category-section .swiper-button-next {
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        border-radius: 0% 15% 15% 0%;
+        width: 45px;
+        height: 45px;
+        color: #333;
+        top: 60%;
+        transform: translateY(-50%);
+        transition: all 0.3s ease;
+        z-index: 10;
+      }
+
+      .category-section .swiper-button-prev{
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        border-radius: 15% 0% 0% 15%;
+        width: 45px;
+        height: 45px;
+        color: #333;
+        top: 60%;
+        transform: translateY(-50%);
+        transition: all 0.3s ease;
+        z-index: 10;
+      }
+
+      .category-section .swiper-button-next:hover,
+      .category-section .swiper-button-prev:hover {
+        background: #f8f8f8;
+      }
+
+      .category-section .swiper-button-next::after,
+      .category-section .swiper-button-prev::after {
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      .category-section .swiper-button-prev {
+        left: auto;
+        right: 8px !important;
+      }
+
+      .category-section .swiper-button-next {
+        left: auto;
+        right: 1114px !important;
+      }
+
+      .category-section .swiper-wrapper{
+        margin-top: 11px !important;
+      }
+
+
+/* ---------------- HOME APPLIANCE HERO SECTION ---------------- */
+
+      .banner-box {
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+        height: 300px;
+      }
+
+      .banner-bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+      }
+
+      .banner-content {
+        position: absolute;
+        top: 42%;
+        right: 95px;
+        transform: translateY(-50%);
+        z-index: 2;
+        color: #fff;
+        max-width: 400px;
+        text-align: right !important;
+      }
+
+      .banner-title {
+        font-size: 23px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      .banner-desc {
+        font-size: 13px;
+        margin-bottom: 34px;
+      }
+
+      .banner-btn {
+        background-color: #dc2655;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        padding: 7px 30px;
+        text-decoration: none;
+        transition: 0.3s;
+        font-size: 12px;
+      }
+
+      .banner-btn a{
+        text-align: right !important;
+      }
+
+      .banner-btn:hover {
+        background-color: #b31e46;
+      }
+
+      .banner-circle {
+        bottom: 79px;
+        left: 122px;
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 10px;
+        font-weight: 500;
+        z-index: 2;
+      }
+
+      .banner-circle strong {
+        font-size: 13px;
+        margin-top: 4px;
+      }
+
+
+
+      /* ======= Best Seller Section ======= */
+
+:root {
+  --bm-accent: #DC2655;
+  --bm-gray-line: #D1D4D4;
+  --bm-card-shadow: rgba(0,0,0,0.08);
+  --bm-card-shadow-hover: rgba(0,0,0,0.15);
+  --bm-radius: 12px;
+  --bm-font: "Vazirmatn", "Tahoma", sans-serif;
+}
+
+.bm-title-row {
+  align-items: center;
+  gap: 12px;
+}
+
+.bm-title {
+  color: var(--bm-accent);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.bm-middle-line {
+  height: 1px;
+  background: var(--bm-gray-line);
+  opacity: 1;
+}
+
+.bm-view-all {
+  color: #666;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+.bm-view-all .bi {
+  font-size: 1.05rem;
+  color: #b3b3b3;
+}
+
+.bm-sep-row {
+  border-bottom: 0px solid transparent;
+  padding-bottom: 10px;
+}
+
+
+.bm-filters-nav .bm-filter-btn {
+  background: transparent;
+  border: none;
+  color: #555;
+  font-weight: 600;
+  padding: 6px 8px;
+  border-radius: 4px;
+  position: relative;
+  transition: color .15s ease;
+}
+
+.bm-filters-nav .bm-filter-btn:hover {
+  color: var(--bm-accent);
+}
+
+/* Active filter: show underline (thicker) */
+.bm-filters-nav .bm-filter-btn.active {
+  color: var(--bm-accent);
+}
+.bm-filters-nav .bm-filter-btn.active::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  margin: 0 auto;
+  width: 60%;
+  height: 4px;
+  background: var(--bm-accent);
+  border-radius: 4px;
+  transform-origin: center;
+  box-shadow: 0 4px 8px rgba(220,38,85,0.08);
+}
+
+/* Cards grid */
+.bm-cards-row { margin-top: 6px; }
+
+/* Product card */
+.bm-product-card {
+  border-radius: 12px;
+  box-shadow: 0 8px 20px var(--bm-card-shadow);
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.03);
+  transition: transform .25s ease, box-shadow .25s ease;
+  text-align: right;
+  direction: rtl;
+}
+
+.bm-product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px var(--bm-card-shadow-hover);
+}
+
+/* Image container */
+.bm-img-wrap {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 10px;
+  height: 220px;
+  overflow: hidden;
+}
+
+.bm-product-img {
+  max-height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.flex-row{
+  display: flex;
+  font-size: 0.92rem;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+}
+
+.bm-meta i.bi-star {
+  color: #ffb300;
+  font-size: 1rem;
+}
+
+.bm-rating {
+  color: #444;
+  font-weight: 600;
+  direction: rtl;
+}
+
+.bm-colors { gap:6px; }
+.bm-color {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.07);
+  display: inline-block;
+}
+
+.bm-product-title {
+  font-size: 0.98rem;
+  font-weight: 700;
+  margin: 0;
+  color: #2b2b2b;
+  line-height: 1.2;
+}
+.bm-brand { font-size: 0.85rem; color: #8b8b8b; }
+
+.bm-price-row { gap: 8px; align-items: flex-end; }
+
+.bm-old-price {
+  text-decoration: line-through;
+  color: #9a9a9a;
+  font-size: 0.85rem;
+}
+.bm-new-price {
+  font-weight: 800;
+  font-size: 1rem;
+  color: #111;
+}
+
+.bm-discount-badge {
+  background: rgba(220,38,85,0.08);
+  color: var(--bm-accent);
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 12px;
+  font-size: 0.9rem;
 }
