@@ -17,7 +17,7 @@
 <body>
 
 
- <!--  Topbar -->
+<!-- =================== TOP BAR =================== -->
   <div class="topbar">
     <div class="container">
       <div class="row align-items-center">
@@ -32,7 +32,7 @@
   </div>
 
 
-    <!-- Header -->
+<!-- =================== HEADER =================== -->
   <header class="main-header">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center flex-wrap">
@@ -62,27 +62,217 @@
   </header>
 
 
-    <!-- Menu Bar -->
-  <nav class="menu-bar">
-    <div class="container">
-      <div class="menu-container">
+<!-- =================== MENU BAR =================== -->
+<nav class="menu-bar">
+  <div class="container">
+    <div class="menu-container">
 
-        <div class="menu-item"><img src="assets/icons/justify.svg"> دسته بندی کالاها</div>
-        <div class="menu-divider"></div>
-        <div class="menu-item"><img src="assets/icons/stars.svg">شگفت‌انگیزها</div>
-        <div class="menu-item"><img src="assets/icons/Medal, Prize, Reward.svg">ترندترین‌ها</div>
-        <div class="menu-item"><img src="assets/icons/cup-2.svg">پرفروش‌ترین‌ها</div>
-        <div class="menu-item"><img src="assets/icons/Favorite.svg">محبوب‌ترین‌ها</div>
-        <div class="menu-divider"></div>
-        <div class="menu-item">سؤالات شما</div>
+      <div class="menu-item category-trigger position-relative">
+        <img src="assets/icons/justify.svg" alt=""> دسته بندی کالاها
+
+        <div class="mega-menu">
+          <div class="container d-flex">
+
+            <div class="mega-right">
+              <ul class="main-categories">
+                <li data-target="kitchen" class="active">لوازم آشپزخانه</li>
+                <li data-target="decor">دکوراسیون داخلی</li>
+                <li data-target="furniture">مبلمان</li>
+                <li data-target="lighting">نور و روشنایی</li>
+                <li data-target="bath">حمام و سرویس خواب</li>
+              </ul>
+            </div>
+
+            <div class="mega-divider"></div>
+
+
+            <div class="mega-left">
+
+              <div class="sub-category active" id="kitchen">
+                <div class="sub-header">
+                  <span>همه لوازم آشپزخانه</span>
+                  <i class="bi bi-chevron-left"></i>
+                </div>
+                <div class="sub-content">
+                  <div class="sub-group">
+                    <h6>ظروف پخت و پز</h6>
+                    <a href="#">سرویس قابلمه</a>
+                    <a href="#">زودپز</a>
+                  </div>
+                  <div class="sub-group">
+                    <h6>لوازم برقی آشپزخانه</h6>
+                    <a href="#">مایکروویو</a>
+                    <a href="#">بلندر</a>
+                    <a href="#">یخچال فریزر</a>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="sub-category" id="decor">
+                <div class="sub-header">
+                  <span>همه دکوراسیون داخلی</span>
+                  <i class="bi bi-chevron-left"></i>
+                </div>
+                <div class="sub-content">
+                  <div class="sub-group">
+                    <h6>تابلو و دیوارکوب</h6>
+                    <a href="#">تابلو مدرن</a>
+                    <a href="#">آینه دکوراتیو</a>
+                  </div>
+                  <div class="sub-group">
+                    <h6>تزئینات منزل</h6>
+                    <a href="#">شمع و شمعدان</a>
+                    <a href="#">گلدان و مجسمه</a>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="sub-category" id="furniture">
+                <div class="sub-header">
+                  <span>همه مبلمان</span>
+                  <i class="bi bi-chevron-left"></i>
+                </div>
+                <div class="sub-content">
+                  <div class="sub-group">
+                    <h6>مبلمان خانگی</h6>
+                    <a href="#">مبل راحتی</a>
+                    <a href="#">میز تلویزیون</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <div class="menu-divider"></div>
+      <div class="menu-item"><img src="assets/icons/stars.svg" alt="">شگفت‌انگیزها</div>
+      <div class="menu-item"><img src="assets/icons/Medal, Prize, Reward.svg" alt="">ترندترین‌ها</div>
+      <div class="menu-item"><img src="assets/icons/cup-2.svg" alt="">پرفروش‌ترین‌ها</div>
+      <div class="menu-item"><img src="assets/icons/Favorite.svg" alt="">محبوب‌ترین‌ها</div>
+      <div class="menu-divider"></div>
+      <div class="menu-item">سؤالات شما</div>
+
     </div>
-  </nav>
+  </div>
+</nav>
+
+
+<div class="mobile">
+
+<!-- =================== HEADER موبایل =================== -->
+<header class="main-header-mobile">
+  <div class="container d-flex justify-content-between align-items-center">
+    <!-- آیکن همبرگر -->
+    <div class="hamburger-menu">
+      <img src="assets/icons/justify.svg" alt="Menu" id="openDrawer">
+    </div>
+
+    <!-- لوگو -->
+    <div class="logo">
+      <img src="assets/images/logo/logo.png" class="deniz">
+    </div>
+  </div>
+
+  <!-- جستجو موبایل -->
+  <div class="search-box-mobile">
+    <img src="assets/icons/Search.svg">
+    <input type="text" placeholder="جستجو ...">
+  </div>
+</header>
+
+<!-- =================== Drawer موبایل =================== -->
+<div class="mobile-drawer" id="mobileDrawer">
+  <div class="drawer-header">
+    <span>دنیزهوم</span>
+    <img src="assets/icons/Arrow-blog.svg" alt="خروج" id="closeDrawer">
+  </div>
+
+  <div class="drawer-content">
+    <ul class="drawer-menu">
+      <li><a href="#">ورود / ثبت نام</a></li>
+      <li><a href="#">سبد خرید</a></li>
+      <li><a href="#">شگفت‌انگیزها</a></li>
+      <li><a href="#">ترندترین‌ها</a></li>
+      <li class="has-submenu" data-target="categoryDrawer">
+        دسته‌بندی کالاها
+        <img src="assets/icons/Arrow-blog.svg" class="arrow-icon">
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- =================== Drawer دسته‌بندی ها =================== -->
+<div class="mobile-drawer mobile-subdrawer" id="categoryDrawer">
+  <div class="drawer-header">
+    <img src="assets/icons/Arrow-blog.svg" class="back-icon" id="backToMain">
+    <span>دسته‌بندی کالاها</span>
+  </div>
+
+  <div class="drawer-content">
+    <ul class="drawer-menu">
+      <li class="has-submenu" data-target="kitchenSub">لوازم آشپزخانه <img src="assets/icons/Arrow-blog.svg" class="arrow-icon"></li>
+      <li class="has-submenu" data-target="decorSub">دکوراسیون داخلی <img src="assets/icons/Arrow-blog.svg" class="arrow-icon"></li>
+      <li class="has-submenu" data-target="furnitureSub">مبلمان <img src="assets/icons/Arrow-blog.svg" class="arrow-icon"></li>
+    </ul>
+  </div>
+</div>
+
+<!-- =================== Drawer زیر منو آشپزخانه =================== -->
+<div class="mobile-drawer mobile-subdrawer" id="kitchenSub">
+  <div class="drawer-header">
+    <img src="assets/icons/Arrow-blog.svg" class="back-icon" data-back="categoryDrawer">
+    <span>لوازم آشپزخانه</span>
+  </div>
+  <div class="drawer-content">
+    <ul class="drawer-menu">
+      <li>سرویس قابلمه</li>
+      <li>زودپز</li>
+      <li>مایکروویو</li>
+      <li>بلندر</li>
+      <li>یخچال فریزر</li>
+    </ul>
+  </div>
+</div>
+
+<!-- =================== Drawer زیر منو دکور =================== -->
+<div class="mobile-drawer mobile-subdrawer" id="decorSub">
+  <div class="drawer-header">
+    <img src="assets/icons/Arrow-blog.svg" class="back-icon" data-back="categoryDrawer">
+    <span>دکوراسیون داخلی</span>
+  </div>
+  <div class="drawer-content">
+    <ul class="drawer-menu">
+      <li>تابلو مدرن</li>
+      <li>آینه دکوراتیو</li>
+      <li>شمع و شمعدان</li>
+      <li>گلدان و مجسمه</li>
+    </ul>
+  </div>
+</div>
+
+<!-- =================== Drawer زیر منو مبلمان =================== -->
+<div class="mobile-drawer mobile-subdrawer" id="furnitureSub">
+  <div class="drawer-header">
+    <img src="assets/icons/Arrow-blog.svg" class="back-icon" data-back="categoryDrawer">
+    <span>مبلمان</span>
+  </div>
+  <div class="drawer-content">
+    <ul class="drawer-menu">
+      <li>مبل راحتی</li>
+      <li>میز تلویزیون</li>
+    </ul>
+  </div>
+</div>
+
+</div>
 
 
 
 
-  <!-- HERO SECTION -->
+<!-- =================== HERO SECTION =================== -->
   <section class="hero-section">
     <div class="swiper hero-swiper">
       <div class="swiper-wrapper">
@@ -90,14 +280,14 @@
         <div class="swiper-slide" style="background-image: url('assets/images/homepage/sofa-hero.png');">
           <div class="hero-content">
             <div class="hero-title-top">ترندترین کالکشن دکوراسیون</div>
-            <div class="hero-title-main">زی‌هوم، زیبایی به سبک ایرانی</div>
+            <div class="hero-title-main">دنیزهوم، زیبایی به سبک ایرانی</div>
           </div>
         </div>
 
         <div class="swiper-slide" style="background-image: url('assets/images/homepage/sofa-hero.png');">
           <div class="hero-content">
             <div class="hero-title-top">چیدمان دل‌انگیز خانه‌ات</div>
-            <div class="hero-title-main">با محصولات خاص زی‌هوم</div>
+            <div class="hero-title-main">با محصولات خاص دنیزهوم</div>
           </div>
         </div>
 
@@ -122,7 +312,6 @@
   <div class="container">
     <div class="row align-items-stretch">
 
-      <!-- Amazing Box (Timer + Title) -->
       <div class="col-lg-3 col-md-12 amazing-box">
         <div class="amazing-content">
           <div class="title">
@@ -149,12 +338,10 @@
         </div>
       </div>
 
-      <!-- Swiper Products -->
       <div class="col-lg-9 col-md-12">
         <div class="swiper amazingSwiperUnique">
           <div class="swiper-wrapper">
 
-            <!-- Product 1 -->
             <div class="swiper-slide">
               <div class="product-card">
                 <img src="assets/images/homepage/pic.png" alt="">
@@ -169,7 +356,7 @@
                   </div>
                 </div>
                 <div class="product-price">
-                  <div class="discount">30%</div>
+                  <div class="discount">۳۰٪</div>
                   <div>
                     <div class="old">۲,۴۰۰,۰۰۰ تومان</div>
                     <div class="new">۱,۶۴۰,۰۰۰ تومان</div>
@@ -178,7 +365,6 @@
               </div>
             </div>
 
-            <!-- Product 2 -->
             <div class="swiper-slide">
               <div class="product-card">
                 <img src="assets/images/homepage/pic.png" alt="">
@@ -191,7 +377,7 @@
                   </div>
                 </div>
                 <div class="product-price">
-                  <div class="discount">20%</div>
+                  <div class="discount">۳۰٪</div>
                   <div>
                     <div class="old">۱,۹۰۰,۰۰۰ تومان</div>
                     <div class="new">۱,۵۲۰,۰۰۰ تومان</div>
@@ -200,7 +386,6 @@
               </div>
             </div>
 
-            <!-- Product 3 -->
             <div class="swiper-slide">
               <div class="product-card">
                 <img src="assets/images/homepage/pic.png" alt="">
@@ -210,7 +395,7 @@
                   <div class="brand">Delonghi 500</div>
                 </div>
                 <div class="product-price">
-                  <div class="discount">15%</div>
+                  <div class="discount">۳۰٪</div>
                   <div>
                     <div class="old">۳,۴۰۰,۰۰۰ تومان</div>
                     <div class="new">۲,۸۹۰,۰۰۰ تومان</div>
@@ -219,7 +404,6 @@
               </div>
             </div>
 
-            <!-- Product 4 -->
             <div class="swiper-slide">
               <div class="product-card">
                 <img src="assets/images/homepage/pic.png" alt="">
@@ -229,7 +413,7 @@
                   <div class="brand">LUX Light</div>
                 </div>
                 <div class="product-price">
-                  <div class="discount">25%</div>
+                  <div class="discount">۳۰٪</div>
                   <div>
                     <div class="old">۱,۲۰۰,۰۰۰ تومان</div>
                     <div class="new">۹۰۰,۰۰۰ تومان</div>
@@ -238,7 +422,6 @@
               </div>
             </div>
 
-            <!-- Product 5 -->
             <div class="swiper-slide">
               <div class="product-card">
                 <img src="assets/images/homepage/pic.png" alt="">
@@ -248,7 +431,7 @@
                   <div class="brand">SmartCook</div>
                 </div>
                 <div class="product-price">
-                  <div class="discount">10%</div>
+                  <div class="discount">۳۰٪</div>
                   <div>
                     <div class="old">۲,۰۰۰,۰۰۰ تومان</div>
                     <div class="new">۱,۸۰۰,۰۰۰ تومان</div>
@@ -320,7 +503,7 @@
 
 
 
-<!-- ===== Simple Banner Section ===== -->
+<!-- =================== SIMPLE BANNER SECTION =================== -->
 <section class="simple-banner container my-5">
   <div class="banner-box position-relative overflow-hidden rounded-4">
     <img src="assets/images/homepage/front-baner.png" alt="لوازم خانگی" class="img-fluid w-100 banner-bg">
@@ -341,10 +524,10 @@
 
 
 
-<!-- ======= Best Seller Section ======= -->
+<!-- =================== BEST SELLER SECTION =================== -->
 
 <section class="container py-4 bm-products-section" aria-label="پرفروش‌ترین محصولات">
-  <!-- Title row -->
+
   <div class="d-flex align-items-center bm-title-row">
     <h3 class="bm-title mb-0">پرفروش‌ترین محصولات</h3>
 
@@ -356,7 +539,7 @@
     </div>
   </div>
 
-  <!-- Filters -->
+
   <div class="mt-3 mb-2">
     <div class="bm-sep-row d-flex align-items-center">
       <div class="bm-filter-pill me-3" aria-hidden="true"></div>
@@ -373,9 +556,8 @@
     </div>
   </div>
 
-  <!-- Product cards -->
   <div class="row gy-4 mt-2 bm-cards-row">
-    <!-- CARD 1 -->
+
     <div class="col-12 col-sm-6 col-lg-3">
       <article class="card bm-product-card h-100" data-cat="kitchen">
         <div class="card-body d-flex flex-column">
@@ -405,7 +587,7 @@
       </article>
     </div>
 
-    <!-- CARD 2 -->
+
     <div class="col-12 col-sm-6 col-lg-3">
       <article class="card bm-product-card h-100" data-cat="tools">
         <div class="card-body d-flex flex-column">
@@ -554,12 +736,12 @@
 </section>
 
 
-<!-- ======= credit card Section ======= -->
+<!-- =================== CREDIT CARD SECTION =================== -->
 
 
 <div class="container credit-section">
   <div class="row g-4">
-    <!-- کارت اول -->
+
     <div class="col-lg-6">
       <div class="credit-card" style="background-image: url('assets/images/homepage/banner2.png');">
         <div class="credit-text text-start">
@@ -568,7 +750,7 @@
             خرید اعتباری!
           </div>
           <p class="credit-desc">
-            سرویس‌های خاص قابلمه متنوع زی‌هوم، حال خوب آشپزخانه
+            سرویس‌های خاص قابلمه متنوع دنیزهوم، حال خوب آشپزخانه
           </p>
           <a href="#" class="credit-btn">
             مشاهده همه
@@ -578,7 +760,7 @@
       </div>
     </div>
 
-    <!-- کارت دوم -->
+
     <div class="col-lg-6">
       <div class="credit-card text-end" style="background-image: url('assets/images/homepage/banner3.png');">
         <div class="credit-text ms-auto">
@@ -587,7 +769,7 @@
             خرید اعتباری!
           </div>
           <p class="credit-desc">
-            قهوه‌سازهای اسمگ، آشپزخانه مدرن با زی‌هوم
+            قهوه‌سازهای اسمگ، آشپزخانه مدرن با دنیزهوم
           </p>
           <a href="#" class="credit-btn">
             مشاهده همه
@@ -604,9 +786,9 @@
 
 
 
-<!-- ======= Favorite Section ======= -->
+<!-- =================== FAVORITE SECTION =================== -->
 <section class="container py-4 fav-products-section" aria-label="علاقه‌مندی‌ها">
-  <!-- Title row -->
+
   <div class="d-flex align-items-center fav-title-row">
     <h3 class="fav-title mb-0">محبوب‌ترین‌ها</h3>
 
@@ -618,7 +800,7 @@
     </div>
   </div>
 
-  <!-- Filters -->
+
   <div class="mt-3 mb-2">
     <div class="fav-sep-row d-flex align-items-center">
       <div class="fav-filter-pill me-3" aria-hidden="true"></div>
@@ -635,9 +817,9 @@
     </div>
   </div>
 
-  <!-- Product cards -->
+
   <div class="row gy-4 mt-2 fav-cards-row">
-    <!-- CARD 1 -->
+
     <div class="col-12 col-sm-6 col-lg-3">
       <article class="card fav-card h-100" data-cat="kitchen">
         <div class="card-body d-flex flex-column">
@@ -667,7 +849,7 @@
       </article>
     </div>
 
-    <!-- CARD 2 -->
+
     <div class="col-12 col-sm-6 col-lg-3">
       <article class="card fav-card h-100" data-cat="tools">
         <div class="card-body d-flex flex-column">
@@ -697,7 +879,7 @@
       </article>
     </div>
 
-    <!-- CARD 3 -->
+
     <div class="col-12 col-sm-6 col-lg-3">
       <article class="card fav-card h-100" data-cat="electro">
         <div class="card-body d-flex flex-column">
@@ -727,7 +909,7 @@
       </article>
     </div>
 
-    <!-- CARD 4 -->
+
     <div class="col-12 col-sm-6 col-lg-3">
       <article class="card fav-card h-100" data-cat="accessory">
         <div class="card-body d-flex flex-column">
@@ -761,7 +943,7 @@
 
 
 
-<!-- ===== Simple Banner Section ===== -->
+<!-- =================== SIMPLE BANNER SECTION =================== -->
 <section class="simple-banner container my-5">
   <div class="banner-box position-relative overflow-hidden rounded-4">
     <img src="assets/images/homepage/banner4.png" alt="لوازم خانگی" class="img-fluid w-100 banner-bg">
@@ -782,7 +964,7 @@
 
 
 <section class="container py-5 bm-blog-section" aria-label="خواندنی ها">
-  <!-- Title row -->
+
   <div class="d-flex align-items-center bm-title-row mb-4">
     <h3 class="bm-title mb-0">خواندنی‌ها</h3>
     <div class="flex-grow-1 mx-3 bm-middle-line" aria-hidden="true"></div>
@@ -792,9 +974,9 @@
     </div>
   </div>
 
-  <!-- Blog cards -->
+
   <div class="row g-4">
-    <!-- Blog card -->
+
     <div class="col-md-6 col-lg-3">
       <div class="bm-blog-card h-100">
         <img src="assets/images/homepage/blog.png" class="bm-blog-img" alt="مقاله 1">
@@ -813,7 +995,7 @@
       </div>
     </div>
 
-    <!-- Blog card -->
+
     <div class="col-md-6 col-lg-3">
       <div class="bm-blog-card h-100">
         <img src="assets/images/homepage/blog.png" class="bm-blog-img" alt="مقاله 1">
@@ -832,7 +1014,7 @@
       </div>
     </div>
 
-    <!-- Blog card -->
+
     <div class="col-md-6 col-lg-3">
       <div class="bm-blog-card h-100">
         <img src="assets/images/homepage/blog.png" class="bm-blog-img" alt="مقاله 1">
@@ -851,7 +1033,7 @@
       </div>
     </div>
 
-    <!-- Blog card -->
+
     <div class="col-md-6 col-lg-3">
       <div class="bm-blog-card h-100">
         <img src="assets/images/homepage/blog.png" class="bm-blog-img" alt="مقاله 1">
@@ -875,7 +1057,152 @@
 
 
 
-<!-- Swiper و Bootstrap -->
+<!-- =================== FOOTER =================== -->
+  <footer class="site-footer">
+
+
+    <div class="footer-main" role="contentinfo">
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-12 col-md-4">
+            <div class="footer-logo">
+
+              <img src="assets/images/logo/logo.png" alt="لوگو دنیزهوم" class="logo-img mb-3">
+            </div>
+            <h5 class="footer-title">درباره دنیزهوم</h5>
+            <p class="footer-desc">
+              فروشگاه ما با ارائه مجموعه‌ای متنوع از محصولات خانه، تجربه‌ای آسان و مطمئن برای خرید آنلاین فراهم کرده است.
+              با ضمانت کیفیت، ارسال سریع و پشتیبانی حرفه‌ای همراه شما هستیم.
+            </p>
+
+            <p class="support">
+              <strong>تلفن پشتیبانی:</strong> ۰۲۱-۴۴۴۴۴۴۴۴
+            </p>
+
+            <p class="follow">همراه ما باشید</p>
+
+            <div class="socials">
+              <a href="#" class="social"><img src="assets/icons/Linkedin.svg"></a>
+              <a href="#" class="social"><img src="assets/icons/Instagram.svg"></a>
+              <a href="#" class="social"><img src="assets/icons/Youtube, Square.svg"></a>
+              <a href="#" class="social"><img src="assets/icons/Twitter, Square.svg"></a>
+            </div>
+          </div>
+
+
+          <div class="col-6 col-md-2">
+            <h6 class="menu-title">محصولات</h6>
+            <ul class="footer-menu list-unstyled">
+              <li><a href="#">مبلمان</a></li>
+              <li><a href="#">دکوراسیون</a></li>
+              <li><a href="#">لوازم آشپزخانه</a></li>
+              <li><a href="#">ابزار خانه</a></li>
+              <li><a href="#">سرویس خواب</a></li>
+            </ul>
+          </div>
+
+
+          <div class="col-6 col-md-2">
+            <h6 class="menu-title">خدمات مشتریان</h6>
+            <ul class="footer-menu list-unstyled">
+              <li><a href="#">پیگیری سفارش</a></li>
+              <li><a href="#">شرایط و قوانین</a></li>
+              <li><a href="#">روش‌های ارسال</a></li>
+              <li><a href="#">سوالات متداول</a></li>
+            </ul>
+          </div>
+
+
+          <div class="col-12 col-md-2">
+            <h6 class="menu-title">دسترسی سریع</h6>
+            <ul class="footer-menu list-unstyled">
+              <li><a href="#">درباره ما</a></li>
+              <li><a href="#">معرفی فروشگاه</a></li>
+              <li><a href="#">تماس با ما</a></li>
+              <li><a href="#">همکاری با ما</a></li>
+              <li><a href="#">وبلاگ</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="footer-sep" role="separator"></div>
+
+      <div class="container py-4">
+        <div class="row align-items-center">
+
+          <div class="col-12 col-md-7">
+            <div class="features-wrap p-3 rounded-3">
+              <div class="row g-3 align-items-center">
+                <div class="col-12 col-sm-4 d-flex align-items-center">
+                  <div class="feature-item d-flex align-items-center">
+                    <div class="feature-icon rounded-3">
+                      <img src="assets/icons/truck-2.svg">
+                    </div>
+                    <div class="ms-3">
+                      <div class="feature-title">ارسال سریع</div>
+                      <div class="feature-sub">در کمترین زمان ممکن</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-4 d-flex align-items-center">
+                  <div class="feature-item d-flex align-items-center">
+                    <div class="feature-icon rounded-3">
+                      <img src="assets/icons/checkmark-select-dotted-line.svg">
+                    </div>
+                    <div class="ms-3">
+                      <div class="feature-title">ضمانت بازگشت کالا</div>
+                      <div class="feature-sub">حداکثر ۱۰ روز کاری</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-4 d-flex align-items-center">
+                  <div class="feature-item d-flex align-items-center">
+                    <div class="feature-icon rounded-3">
+                      <img src="assets/icons/3D, Shape, Object, Сube.svg">
+                    </div>
+                    <div class="ms-3">
+                      <div class="feature-title">اصالت کالا</div>
+                      <div class="feature-sub">از بهترین برندها</div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-md-4">
+            <div class="trust-logos d-flex gap-3 justify-content-start flex-wrap">
+
+              <img src="assets/images/trust/82.png" alt="نماد اعتماد" class="trust-img">
+              <img src="assets/images/trust/Frame 1890165714.png" alt="سامانه" class="trust-img">
+              <img src="assets/images/trust/Frame 1890165715.png" alt="سایر" class="trust-img">
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-copy text-white">
+      <div class="container d-flex justify-content-between align-items-center py-2">
+        <div class="copyright-text">تمامی حقوق برای شرکت دنیزهوم محفوظ است © ۲۰۲۵</div>
+        <div class="madeby">طراحی شده توسط <span class="author">امیرعابدین</span></div>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+<!-- =================== SWIPER AND BOOTSTRAP =================== -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
