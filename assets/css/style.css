@@ -1667,3 +1667,741 @@ span {
         font-size: 1.1rem;
       }
     }
+
+
+
+/* ===================== RESPONSIVE (Updated & Enhanced) ===================== */
+
+/* لپتاپ */
+@media (max-width: 1200px) {
+  .unique-amazing-section {
+    padding: 50px 0;
+  }
+  .unique-amazing-section .amazing-box {
+    height: auto;
+    padding: 30px 25px;
+  }
+  .unique-amazing-section .amazing-content h2 {
+    font-size: 1.9rem;
+  }
+  .unique-amazing-section .product-card {
+    height: auto;
+  }
+}
+
+/* تبلت */
+@media (max-width: 992px) {
+  .unique-amazing-section {
+    padding: 45px 0;
+  }
+
+  .unique-amazing-section .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .unique-amazing-section .amazing-box {
+    width: 90%;
+    height: auto;
+    margin-bottom: 25px;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .unique-amazing-section .amazing-content h2 {
+    font-size: 1.7rem;
+    line-height: 1.4;
+  }
+
+  .unique-amazing-section .view-all {
+    margin: 15px auto;
+    font-size: 0.9rem;
+  }
+
+  .unique-amazing-section .timer-box {
+    width: 100%;
+    padding: 14px;
+  }
+
+  .unique-amazing-section .swiper {
+    padding-bottom: 50px;
+  }
+
+  .unique-amazing-section .swiper-nav {
+    bottom: 0;
+    top: auto;
+    transform: none;
+    width: 38px;
+    height: 38px;
+  }
+
+  .unique-amazing-section .swiper-nav.next {
+    right: 98%;
+    transform: translateX(70px);
+    top: 123px;
+
+  }
+
+  .unique-amazing-section .swiper-nav.prev {
+    left: 98%;
+    transform: translateX(-70px);
+    top: 123px;
+  }
+}
+
+/* موبایل */
+@media (max-width: 768px) {
+  .unique-amazing-section {
+    padding: 35px 0;
+  }
+
+  .unique-amazing-section .amazing-box {
+    padding: 25px 20px;
+    width: 95%;
+    margin: 0 auto 25px;
+  }
+
+  .unique-amazing-section .amazing-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .unique-amazing-section .view-all {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+  }
+
+  .unique-amazing-section .timer-box {
+    padding: 12px;
+  }
+
+  .unique-amazing-section .product-card {
+    width: 90%;
+    height: auto;
+    padding: 12px;
+    margin: 0 auto;
+  }
+
+  .unique-amazing-section .product-card img {
+    height: 170px;
+    object-fit: contain;
+  }
+
+  .unique-amazing-section .product-info .title {
+    font-size: 0.95rem;
+  }
+
+  .unique-amazing-section .swiper-nav {
+    width: 32px;
+    height: 32px;
+    bottom: 10px;
+  }
+}
+
+/* موبایل کوچک */
+@media (max-width: 480px) {
+  .unique-amazing-section {
+    padding: 30px 0;
+  }
+
+  .unique-amazing-section .amazing-content h2 {
+    font-size: 1.25rem;
+  }
+
+  .unique-amazing-section .product-card {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .unique-amazing-section .product-card img {
+    height: 140px;
+  }
+
+  .unique-amazing-section .product-info .title {
+    font-size: 0.9rem;
+  }
+
+  .unique-amazing-section .product-info .brand {
+    font-size: 0.8rem;
+  }
+
+  .unique-amazing-section .discount {
+    font-size: 0.8rem;
+    padding: 3px 8px;
+  }
+
+  .unique-amazing-section .new {
+    font-size: 0.9rem;
+  }
+
+  .unique-amazing-section .swiper-nav {
+    bottom: 6px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+@media (max-width: 992px) {
+    .category-section .swiper-button-next,
+  .category-section .swiper-button-prev {
+    display: none !important;
+  }
+
+  .category-section .swiper-slide{
+    display: flex;
+  justify-content: center;
+  margin-left: 0px !important;
+  width: 250px !important;
+  }
+
+  .category-section .category-card{
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+  transform: translateY(-6px);
+  padding: 25px 10px;
+  width: 100%;
+  max-width: 160px;
+  cursor: pointer;
+  border: 1px solid #C2C5C6;
+  }
+
+}
+
+@media (max-width: 450px) {
+  .category-section .swiper-slide{
+  width: 290px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .category-section .swiper-slide{
+  width: 250px !important;
+  }
+}
+
+@media (max-width: 350px) {
+  .category-section .swiper-slide{
+  width: 218px !important;
+  }
+}
+
+/* =================== ریسپانسیو بنر =================== */
+
+/* لپتاپ متوسط */
+@media (max-width: 1200px) {
+  .banner-box {
+    height: 270px;
+  }
+
+  .banner-content {
+    right: 60px;
+    top: 45%;
+    max-width: 350px;
+  }
+
+  .banner-title {
+    font-size: 21px;
+  }
+
+  .banner-desc {
+    font-size: 12px;
+  }
+
+  .banner-btn {
+    font-size: 11px;
+    padding: 6px 26px;
+  }
+
+  .banner-circle {
+    bottom: 65px;
+    left: 100px;
+    width: 90px;
+    height: 90px;
+  }
+}
+
+/* تبلت */
+@media (max-width: 992px) {
+  .banner-box {
+    height: 240px;
+  }
+
+  .banner-content {
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    text-align: center !important;
+    max-width: 320px;
+    padding: 0 20px;
+  }
+
+  .banner-title {
+    font-size: 19px;
+  }
+
+  .banner-desc {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .banner-btn {
+    font-size: 11px;
+    padding: 6px 22px;
+  }
+
+  .banner-circle {
+    display: none; /* دایره حذف برای تبلت */
+  }
+}
+
+/* موبایل */
+@media (max-width: 768px) {
+  .banner-box {
+    height: 220px;
+  }
+
+  .banner-content {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    text-align: center !important;
+    width: 90%;
+    max-width: 280px;
+    padding: 0 15px;
+  }
+
+  .banner-title {
+    font-size: 17px;
+    margin-bottom: 8px;
+  }
+
+  .banner-desc {
+    font-size: 11px;
+    margin-bottom: 18px;
+  }
+
+  .banner-btn {
+    font-size: 10.5px;
+    padding: 6px 20px;
+  }
+
+  .banner-circle {
+    display: none !important;
+  }
+}
+
+/* موبایل کوچک */
+@media (max-width: 480px) {
+  .banner-box {
+    height: 200px;
+  }
+
+  .banner-content {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    text-align: center !important;
+    width: 95%;
+    padding: 0 10px;
+  }
+
+  .banner-title {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .banner-desc {
+    font-size: 10px;
+    margin-bottom: 15px;
+  }
+
+  .banner-btn {
+    font-size: 10px;
+    padding: 5px 18px;
+  }
+
+  .banner-circle {
+    display: none !important;
+  }
+}
+
+
+/* =================== ریسپانسیو BEST SELLER =================== */
+
+/* لپ‌تاپ متوسط */
+@media (max-width: 1200px) {
+  .bm-title {
+    font-size: 1.1rem;
+  }
+
+  .bm-view-all {
+    font-size: 0.9rem;
+  }
+
+  .bm-product-card {
+    border-radius: 10px;
+  }
+
+  .bm-img-wrap {
+    height: 200px;
+  }
+
+  .bm-product-title {
+    font-size: 0.95rem;
+  }
+
+  .bm-new-price {
+    font-size: 0.95rem;
+  }
+}
+
+/* تبلت */
+@media (max-width: 992px) {
+  .bm-title-row {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .bm-title {
+    font-size: 1.05rem;
+  }
+
+  .bm-view-all {
+    font-size: 0.9rem;
+  }
+
+  .bm-filters-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .bm-product-card {
+    margin: 0 auto;
+    max-width: 240px;
+  }
+
+  .bm-img-wrap {
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bm-title-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .bm-title {
+    font-size: 1rem;
+  }
+
+  .bm-filters-nav {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+
+  .bm-img-wrap {
+    height: 160px;
+  }
+
+  .bm-product-title {
+    font-size: 0.9rem;
+  }
+
+  .bm-old-price {
+    font-size: 0.8rem;
+  }
+
+  .bm-new-price {
+    font-size: 0.9rem;
+  }
+
+  .bm-discount-badge {
+    font-size: 0.8rem;
+    padding: 5px 8px;
+  }
+
+  /* حذف دکمه‌های Swiper در موبایل */
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+}
+
+/* موبایل کوچک */
+@media (max-width: 480px) {
+  .bm-title-row {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+
+  .bm-title {
+    font-size: 0.95rem;
+  }
+
+
+  .bm-img-wrap {
+    height: 140px;
+  }
+
+  .bm-product-title {
+    font-size: 0.85rem;
+  }
+
+  .bm-new-price {
+    font-size: 0.85rem;
+  }
+
+  .bm-discount-badge {
+    font-size: 0.75rem;
+    padding: 4px 6px;
+  }
+
+  .bm-filters-nav {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .credit-card {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 25px 20px;
+    border-radius: 0;
+  }
+
+  .credit-text {
+    max-width: 100%;
+  }
+
+  .credit-title {
+    font-size: 1.2rem;
+  }
+
+  .credit-desc {
+    font-size: 11px;
+    margin-bottom: 15px;
+  }
+
+  .credit-btn {
+    font-size: 0.85rem;
+    padding: 7px 15px;
+  }
+
+}
+
+/* --- تبلت‌ها 501px تا 991px --- */
+@media (min-width: 501px) and (max-width: 991px) {
+  .credit-card {
+    height: 260px;
+    padding: 30px;
+  }
+
+  .credit-text {
+    max-width: 80%;
+  }
+
+  .credit-title {
+    font-size: 1.35rem;
+  }
+
+  .credit-desc {
+    font-size: 12px;
+  }
+
+  .credit-btn {
+    font-size: 0.9rem;
+    padding: 8px 18px;
+  }
+}
+
+/* --- لپ‌تاپ و مانیتورهای بزرگ بالای 992px --- */
+@media (min-width: 992px) {
+  .credit-card {
+    height: 320px;
+  }
+
+  .credit-text {
+    max-width: 60%;
+  }
+}
+
+
+/* ================= R E S P O N S I V E  F O O T E R ================= */
+
+/* --- موبایل‌های کوچک (تا 575px) --- */
+@media (max-width: 575px) {
+
+  .footer-main {
+    padding: 35px 20px 20px;
+    text-align: center;
+    border-top-left-radius: 18px;
+  }
+
+  .footer-main .logo-img {
+    max-width: 50px;
+    margin-bottom: 10px;
+  }
+
+  .footer-title {
+    font-size: 1rem;
+  }
+
+  .footer-desc {
+    font-size: 0.85rem;
+    max-width: 100%;
+    margin: 0 auto 15px;
+  }
+
+  .support, .follow {
+    font-size: 0.9rem;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+
+  .socials .social {
+    width: 34px;
+    height: 34px;
+  }
+
+  .col-md-2 {
+    margin: 30px 0 0 0 !important;
+    text-align: center;
+  }
+
+  .menu-title {
+    font-size: 0.95rem;
+  }
+
+  .footer-menu li {
+    margin-bottom: 6px;
+  }
+
+  .footer-menu a {
+    font-size: 0.9rem;
+  }
+
+  .features-wrap {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .feature-item {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 18px;
+  }
+
+  .feature-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .feature-title {
+    font-size: 0.95rem;
+  }
+
+  .feature-sub {
+    font-size: 0.8rem;
+  }
+
+  .trust-logos {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .trust-img {
+    max-width: 70px;
+  }
+
+  .footer-copy .container {
+    font-size: 0.85rem;
+    text-align: center;
+    padding: 12px 0;
+  }
+}
+
+/* --- تبلت‌ها (576px تا 991px) --- */
+@media (min-width: 576px) and (max-width: 991px) {
+  .footer-main {
+    padding: 40px 30px 25px;
+  }
+
+  .footer-desc {
+    max-width: 80%;
+    margin: 0 auto 20px;
+    text-align: center;
+  }
+
+  .col-md-2 {
+    margin-top: 40px;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .features-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .feature-item {
+    flex: 1 1 45%;
+    justify-content: center;
+  }
+
+  .trust-logos {
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .footer-copy .container {
+    text-align: center;
+  }
+}
+
+/* --- لپ‌تاپ‌ها و مانیتورهای بزرگ (بیش از 992px) --- */
+@media (min-width: 992px) {
+  .footer-main {
+    padding: 50px 0 30px;
+  }
+
+  .footer-desc {
+    max-width: 420px;
+  }
+
+  .features-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .trust-logos {
+    display: flex;
+    justify-content: flex-start;
+    gap: 18px;
+  }
+
+  .footer-copy .container {
+    font-size: 0.92rem;
+  }
+}

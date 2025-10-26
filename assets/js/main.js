@@ -78,83 +78,114 @@ document.addEventListener("DOMContentLoaded", function () {
     updateTimer();
   }
 
-  // === Product Slider ===
-  const productSwiperEl = document.querySelector(".mySwiper");
-  if (productSwiperEl) {
-    new Swiper(".mySwiper", {
-      slidesPerView: 4,
-      spaceBetween: 25,
-      loop: false,
-      speed: 700,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-        0: { slidesPerView: 1.3 },
-        576: { slidesPerView: 2 },
-        768: { slidesPerView: 3 },
-        1200: { slidesPerView: 4 },
-      },
+// === Product Slider ===
+const productSwiperEl = document.querySelector(".mySwiper");
+if (productSwiperEl) {
+  new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    spaceBetween: 25,
+    loop: false,
+    speed: 700,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      0: { slidesPerView: 1, spaceBetween: 10 },
+      500: { slidesPerView: 2, spaceBetween: 15 },
+      1000: { slidesPerView: 4, spaceBetween: 25 },
+    },
+  });
+}
+
+// === Product Filter (bm-filter-btn) ===
+(function () {
+  const buttons = document.querySelectorAll(".bm-filter-btn");
+  const cards = Array.from(document.querySelectorAll(".bm-product-card"));
+  if (!buttons.length || !cards.length) return;
+
+  function getVisibleCount() {
+    const width = window.innerWidth;
+    if (width < 500) return 1;
+    if (width < 1000) return 2;
+    return 4;
+  }
+
+  function showFilteredCards(category) {
+    const filtered = category
+      ? cards.filter((card) => card.getAttribute("data-cat") === category)
+      : cards;
+
+    const visibleCount = getVisibleCount();
+
+    cards.forEach((card) => (card.parentElement.style.display = "none"));
+    filtered.slice(0, visibleCount).forEach((card) => {
+      card.parentElement.style.display = "";
     });
   }
 
-  // === Product Filter (bm-filter-btn) ===
-  (function () {
-    const buttons = document.querySelectorAll(".bm-filter-btn");
-    const cards = Array.from(document.querySelectorAll(".bm-product-card"));
-    if (!buttons.length || !cards.length) return;
+  showFilteredCards();
 
-    function showFilteredCards(category) {
-      const filtered = category
-        ? cards.filter((card) => card.getAttribute("data-cat") === category)
-        : cards;
-
-      cards.forEach((card) => (card.parentElement.style.display = "none"));
-      filtered.slice(0, 4).forEach((card) => {
-        card.parentElement.style.display = "";
-      });
-    }
-
-    showFilteredCards();
-
-    buttons.forEach((btn) => {
-      btn.addEventListener("click", function () {
-        buttons.forEach((b) => b.classList.remove("active"));
-        this.classList.add("active");
-        showFilteredCards(this.getAttribute("data-filter"));
-      });
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      buttons.forEach((b) => b.classList.remove("active"));
+      this.classList.add("active");
+      showFilteredCards(this.getAttribute("data-filter"));
     });
-  })();
+  });
 
-  // === Favorite Filter (fav-filter-btn) ===
-  (function () {
-    const favButtons = document.querySelectorAll(".fav-filter-btn");
-    const favCards = Array.from(document.querySelectorAll(".fav-card"));
-    if (!favButtons.length || !favCards.length) return;
+  window.addEventListener("resize", () => showFilteredCards(document.querySelector(".bm-filter-btn.active")?.getAttribute("data-filter")));
+})();
 
-    function showFavCards(category) {
-      const filtered = category
-        ? favCards.filter((card) => card.getAttribute("data-cat") === category)
-        : favCards;
 
-      favCards.forEach((card) => (card.parentElement.style.display = "none"));
-      filtered.slice(0, 4).forEach((card) => {
-        card.parentElement.style.display = "";
-        card.classList.add("fade-in");
-      });
-    }
+// === Favorite Filter (fav-filter-btn) ===
+(function () {
+  const favButtons = document.querySelectorAll(".fav-filter-btn");
+  const favCards = Array.from(document.querySelectorAll(".fav-card"));
+  if (!favButtons.length || !favCards.length) return;
 
-    showFavCards();
+  // تعیین تعداد کارت‌ها بر اساس عرض صفحه
+  function getVisibleCount() {
+    const width = window.innerWidth;
+    if (width < 500) return 1;
+    if (width < 1000) return 2;
+    return 4;
+  }
 
-    favButtons.forEach((btn) => {
-      btn.addEventListener("click", function () {
-        favButtons.forEach((b) => b.classList.remove("active"));
-        this.classList.add("active");
-        showFavCards(this.getAttribute("data-filter"));
-      });
+  function showFavCards(category) {
+    const filtered = category
+      ? favCards.filter((card) => card.getAttribute("data-cat") === category)
+      : favCards;
+
+    const visibleCount = getVisibleCount();
+
+    favCards.forEach((card) => {
+      card.parentElement.style.display = "none";
+      card.classList.remove("fade-in");
     });
-  })();
+
+    filtered.slice(0, visibleCount).forEach((card) => {
+      card.parentElement.style.display = "";
+      setTimeout(() => card.classList.add("fade-in"), 50);
+    });
+  }
+
+  showFavCards();
+
+  favButtons.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      favButtons.forEach((b) => b.classList.remove("active"));
+      this.classList.add("active");
+      showFavCards(this.getAttribute("data-filter"));
+    });
+  });
+
+  window.addEventListener("resize", () => {
+    const activeCategory =
+      document.querySelector(".fav-filter-btn.active")?.getAttribute("data-filter");
+    showFavCards(activeCategory);
+  });
+})();
 
   // === Back to Top Button ===
   const backToTopBtn = document.getElementById("backToTop");
