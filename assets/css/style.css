@@ -759,11 +759,6 @@ span {
   margin-bottom: 35px;
 }
 
-.category-section .swiper {
-  overflow: visible !important;
-}
-
-
 .category-section .swiper-slide {
   display: flex;
   justify-content: center;
@@ -805,15 +800,17 @@ span {
   height: 42px;
   border-radius: 50%;
   background: #fff;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
 }
 
 .category-section .swiper-button-next::after,
 .category-section .swiper-button-prev::after {
   font-size: 17px;
   font-weight: 700;
+  color: var(--black);
 }
 
 .category-section .swiper-button-prev {
