@@ -742,119 +742,125 @@ span {
 
 /* ================= CATEGORY SECTION ================= */
 
+.category-section {
+  margin: 30px 0;
+  text-align: center;
+  position: relative;
+}
 
-    .category-section {
-      margin-top: 30px;
-      margin-bottom: 30px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
+.category-section .container {
+  max-width: 1500px !important;
+}
 
-    .category-section .container{
-      max-width: 1500px !important;
-    }
+.category-section h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 35px;
+}
 
-    .category-section h2 {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: #1a1a1a;
-      margin-bottom: 45px;
-      position: relative;
-    }
+.category-section .swiper {
+  overflow: visible !important;
+}
 
-    .category-section .swiper {
-      width: 90%;
-      max-width: 1300px;
-    }
 
-    .category-section .swiper-slide {
-      display: flex;
-      justify-content: center;
-    }
+.category-section .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
 
-    .category-section .category-card {
-      background-color: #fff;
-      border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-      transition: all 0.3s ease;
-      transform: translateY(-6px);
-      padding: 25px 10px;
-      width: 100%;
-      max-width: 260px;
-      cursor: pointer;
-      border: 1px solid #C2C5C6;
-    }
+.category-section .category-card {
+  background: #fff;
+  border-radius: 15px;
+  border: 1px solid #C2C5C6;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  transition: .3s ease;
+  padding: 20px 10px;
+  width: 100%;
+  max-width: 210px;
+}
 
-    .category-section .category-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    }
+.category-section .category-card:hover {
+  transform: translateY(-4px);
+}
 
-    .category-section .category-card img {
-      width: 110px;
-      height: 110px;
-      object-fit: contain;
-      margin-bottom: 15px;
-    }
+.category-section .category-card img {
+  width: 95px;
+  height: 95px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
 
-    .category-section .category-card h5 {
-      font-size: 1rem;
-      color: #333;
-      margin: 0;
-      font-weight: 500;
-    }
+.category-section .category-card h5 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
 
-      .category-section .swiper-button-next {
-        border: 1px solid #ddd;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-        border-radius: 0% 15% 15% 0%;
-        width: 45px;
-        height: 45px;
-        color: #333;
-        top: 60%;
-        transform: translateY(-50%);
-        transition: all 0.3s ease;
-        z-index: 10;
-      }
+.category-section .swiper-button-next,
+.category-section .swiper-button-prev {
+  border: 1px solid #ccc;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
 
-      .category-section .swiper-button-prev{
-        border: 1px solid #ddd;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-        border-radius: 15% 0% 0% 15%;
-        width: 45px;
-        height: 45px;
-        color: #333;
-        top: 60%;
-        transform: translateY(-50%);
-        transition: all 0.3s ease;
-        z-index: 10;
-      }
+.category-section .swiper-button-next::after,
+.category-section .swiper-button-prev::after {
+  font-size: 17px;
+  font-weight: 700;
+}
 
-      .category-section .swiper-button-next:hover,
-      .category-section .swiper-button-prev:hover {
-        background: #f8f8f8;
-      }
+.category-section .swiper-button-prev {
+  right: -5px;
+}
 
-      .category-section .swiper-button-next::after,
-      .category-section .swiper-button-prev::after {
-        font-size: 18px;
-        font-weight: 600;
-      }
+.category-section .swiper-button-next {
+  left: -5px;
+}
 
-      .category-section .swiper-button-prev {
-        left: auto;
-        right: 24px !important;
-      }
+@media (max-width: 480px) {
+  .category-section h2 {
+    font-size: 1.4rem;
+  }
 
-      .category-section .swiper-button-next {
-        left: auto;
-        left: 24px !important;
-      }
+  .category-section .category-card {
+    max-width: 160px;
+    padding: 18px 8px;
+  }
 
-      .category-section .swiper-wrapper{
-        margin-top: 11px !important;
-      }
+  .category-section .category-card img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .category-section .swiper-button-next,
+  .category-section .swiper-button-prev {
+    width: 34px;
+    height: 34px;
+  }
+
+  .category-section .swiper {
+    padding: 0 8px;
+  }
+}
+
+@media (max-width: 991px) {
+  .category-section .category-card {
+    max-width: 180px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .category-section .swiper {
+    max-width: 1400px;
+  }
+}
 
 
 /* ================= BANNER SECTION ================= */
@@ -1105,9 +1111,10 @@ span {
 
       /* ================= CREDIT SECTION ================= */
 
-      .credit-section {
-        padding: 50px 0;
-      }
+  .credit-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 
       .credit-card {
         position: relative;
@@ -1537,7 +1544,7 @@ span {
         transform: translateY(-50%);
       }
 
-      /* ======== Drawer موبایل ======== */
+/* ===================== DRAWER ===================== */
       .mobile-drawer {
         position: fixed;
         top: 0;
@@ -1670,9 +1677,8 @@ span {
 
 
 
-/* ===================== RESPONSIVE (Updated & Enhanced) ===================== */
+/* ===================== RESPONSIVE ===================== */
 
-/* لپتاپ */
 @media (max-width: 1200px) {
   .unique-amazing-section {
     padding: 50px 0;
@@ -1689,7 +1695,6 @@ span {
   }
 }
 
-/* تبلت */
 @media (max-width: 992px) {
   .unique-amazing-section {
     padding: 45px 0;
@@ -1749,7 +1754,6 @@ span {
   }
 }
 
-/* موبایل */
 @media (max-width: 768px) {
   .unique-amazing-section {
     padding: 35px 0;
@@ -1797,7 +1801,6 @@ span {
   }
 }
 
-/* موبایل کوچک */
 @media (max-width: 480px) {
   .unique-amazing-section {
     padding: 30px 0;
@@ -1851,7 +1854,7 @@ span {
     display: flex;
   justify-content: center;
   margin-left: 0px !important;
-  width: 250px !important;
+  width: 220px !important;
   }
 
   .category-section .category-card{
@@ -1869,15 +1872,9 @@ span {
 
 }
 
-@media (max-width: 450px) {
-  .category-section .swiper-slide{
-  width: 290px !important;
-  }
-}
-
 @media (max-width: 400px) {
   .category-section .swiper-slide{
-  width: 250px !important;
+  width: 220px !important;
   }
 }
 
@@ -1887,9 +1884,8 @@ span {
   }
 }
 
-/* =================== ریسپانسیو بنر =================== */
+/* ===================== RESPONSIVE BANNER ===================== */
 
-/* لپتاپ متوسط */
 @media (max-width: 1200px) {
   .banner-box {
     height: 270px;
@@ -1922,7 +1918,6 @@ span {
   }
 }
 
-/* تبلت */
 @media (max-width: 992px) {
   .banner-box {
     height: 240px;
@@ -1952,11 +1947,10 @@ span {
   }
 
   .banner-circle {
-    display: none; /* دایره حذف برای تبلت */
+    display: none;
   }
 }
 
-/* موبایل */
 @media (max-width: 768px) {
   .banner-box {
     height: 220px;
@@ -1993,7 +1987,6 @@ span {
   }
 }
 
-/* موبایل کوچک */
 @media (max-width: 480px) {
   .banner-box {
     height: 200px;
@@ -2030,9 +2023,8 @@ span {
 }
 
 
-/* =================== ریسپانسیو BEST SELLER =================== */
+/* =================== RESPONSIVE BEST SELLER =================== */
 
-/* لپ‌تاپ متوسط */
 @media (max-width: 1200px) {
   .bm-title {
     font-size: 1.1rem;
@@ -2059,7 +2051,6 @@ span {
   }
 }
 
-/* تبلت */
 @media (max-width: 992px) {
   .bm-title-row {
     flex-direction: column;
@@ -2132,14 +2123,12 @@ span {
     padding: 5px 8px;
   }
 
-  /* حذف دکمه‌های Swiper در موبایل */
   .swiper-button-next,
   .swiper-button-prev {
     display: none !important;
   }
 }
 
-/* موبایل کوچک */
 @media (max-width: 480px) {
   .bm-title-row {
     flex-direction: column;
@@ -2203,7 +2192,6 @@ span {
 
 }
 
-/* --- تبلت‌ها 501px تا 991px --- */
 @media (min-width: 501px) and (max-width: 991px) {
   .credit-card {
     height: 260px;
@@ -2228,7 +2216,6 @@ span {
   }
 }
 
-/* --- لپ‌تاپ و مانیتورهای بزرگ بالای 992px --- */
 @media (min-width: 992px) {
   .credit-card {
     height: 320px;
@@ -2242,8 +2229,11 @@ span {
 
 /* ================= R E S P O N S I V E  F O O T E R ================= */
 
-/* --- موبایل‌های کوچک (تا 575px) --- */
 @media (max-width: 575px) {
+
+  .credit-section {
+    margin: 0 0 20px 20px;
+}
 
   .footer-main {
     padding: 35px 20px 20px;
@@ -2338,7 +2328,6 @@ span {
   }
 }
 
-/* --- تبلت‌ها (576px تا 991px) --- */
 @media (min-width: 576px) and (max-width: 991px) {
   .footer-main {
     padding: 40px 30px 25px;
@@ -2379,7 +2368,6 @@ span {
   }
 }
 
-/* --- لپ‌تاپ‌ها و مانیتورهای بزرگ (بیش از 992px) --- */
 @media (min-width: 992px) {
   .footer-main {
     padding: 50px 0 30px;

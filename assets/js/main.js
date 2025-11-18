@@ -1,4 +1,5 @@
-// === Hero Slider ===
+ /* ===================== HERO SLIDER ===================== */
+ 
 document.addEventListener("DOMContentLoaded", function () {
 
   const heroSwiperEl = document.querySelector(".hero-swiper");
@@ -21,7 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // === Amazing Slider ===
+ /* ===================== AMAZING SLIDER ===================== */
+
   const amazingSwiperEl = document.querySelector(".amazingSwiperUnique");
   if (amazingSwiperEl) {
     new Swiper(".amazingSwiperUnique", {
@@ -46,7 +48,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // === Countdown Timer ===
+/* ===================== COUNTDOWN TIMER ===================== */
+
   const timerEl = document.querySelector(".timer-content");
   if (timerEl) {
     const endTime = new Date().getTime() + 6 * 60 * 60 * 1000;
@@ -78,27 +81,37 @@ document.addEventListener("DOMContentLoaded", function () {
     updateTimer();
   }
 
-// === Product Slider ===
+/* ===================== CATEGORY SWIPER ===================== */
+
 const productSwiperEl = document.querySelector(".mySwiper");
+
 if (productSwiperEl) {
   new Swiper(".mySwiper", {
     slidesPerView: 4,
     spaceBetween: 25,
     loop: false,
-    speed: 700,
+    speed: 600,
+    slidesPerGroup: 1,
+    slidesOffsetAfter: 40,
+
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+
     breakpoints: {
-      0: { slidesPerView: 1, spaceBetween: 10 },
-      500: { slidesPerView: 2, spaceBetween: 15 },
+      0:   { slidesPerView: 1.4, spaceBetween: 10 },
+      360: { slidesPerView: 1.6, spaceBetween: 12 },
+      420: { slidesPerView: 1.8, spaceBetween: 12 },
+      480: { slidesPerView: 2.1, spaceBetween: 15 },
+      650: { slidesPerView: 3, spaceBetween: 18 },
       1000: { slidesPerView: 4, spaceBetween: 25 },
     },
   });
 }
 
-// === Product Filter (bm-filter-btn) ===
+ /* ===================== PRODUCT FILTER ===================== */ 
+ 
 (function () {
   const buttons = document.querySelectorAll(".bm-filter-btn");
   const cards = Array.from(document.querySelectorAll(".bm-product-card"));
@@ -138,13 +151,13 @@ if (productSwiperEl) {
 })();
 
 
-// === Favorite Filter (fav-filter-btn) ===
+/* ===================== FAVORITE FILTER ===================== */
+
 (function () {
   const favButtons = document.querySelectorAll(".fav-filter-btn");
   const favCards = Array.from(document.querySelectorAll(".fav-card"));
   if (!favButtons.length || !favCards.length) return;
 
-  // تعیین تعداد کارت‌ها بر اساس عرض صفحه
   function getVisibleCount() {
     const width = window.innerWidth;
     if (width < 500) return 1;
@@ -187,7 +200,8 @@ if (productSwiperEl) {
   });
 })();
 
-  // === Back to Top Button ===
+  /* ===================== BACK TO TOP BUTTON ===================== */
+
   const backToTopBtn = document.getElementById("backToTop");
   if (backToTopBtn) {
     backToTopBtn.addEventListener("click", function () {
@@ -203,7 +217,8 @@ if (productSwiperEl) {
     });
   }
 
-  // === Main Categories Hover ===
+/* ===================== MAIN CATEGORIES HOVER ===================== */
+
   const mainCategories = document.querySelectorAll(".main-categories li");
   const subCategories = document.querySelectorAll(".sub-category");
   if (mainCategories.length && subCategories.length) {
