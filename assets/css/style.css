@@ -810,7 +810,7 @@ span {
 .category-section .swiper-button-prev::after {
   font-size: 17px;
   font-weight: 700;
-  color: var(--black);
+  color: var(--black) !important;
 }
 
 .category-section .swiper-button-prev {
